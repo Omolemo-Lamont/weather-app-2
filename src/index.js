@@ -40,6 +40,4 @@ function displayTemperature(response) {
 let apiKey = "6f727a99c6dff687686c2d48cae1c86d";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Pretoria&appid=${apiKey}&units=metric`;
 
-console.log(apiUrl);
-
 axios.get(apiUrl).then(displayTemperature);
