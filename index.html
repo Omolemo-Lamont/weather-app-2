@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>WeartherApp2</title>
 </head>
@@ -15,29 +16,27 @@
         <div class="weather-app-rapper">
             <div class="weather-app">
                 <div class="overview">
-                    <h1>
-                        Pretoria
-                    </h1>
+                    <h1 id="city"></h1>
                     <ul>
                         <li>friday 05:00</li>
-                        <li>clear</li>
+                        <li id="description"></li>
                     </ul>
                 </div>
                 <div class="row">
                     <div class="col-6">
                         <div class="d-flex weather-temperature">
                             <img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="clear" />
-                            <strong>12</strong>
+                            <strong id="temperature"></strong>
                             <span class="units">°C | <a href="#">°F</a></span>
                         </div>
                     </div>
                     <div class="col-6">
                         <ul>
                             <li>
-                                humidity:86%
+                                humidity:<span id="humidity"></span>%
                             </li>
                             <li>
-                                wind: 8 km/h
+                                wind:<span id="wind"></span> km/h
                             </li>
                         </ul>
                     </div>
