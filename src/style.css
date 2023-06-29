@@ -20,10 +20,14 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-transform: capitalize;
     color: gray;
     font-size: 16px;
     font-weight: 100px;
+
+}
+
+li ::first-letter {
+    text-transform: capitalize;
 
 }
 
