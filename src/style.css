@@ -76,3 +76,23 @@ li ::first-letter {
 .weather-temperature .active:hover {
     text-decoration: none;
 }
+
+.weather-forcast {
+    margin: 20px;
+    text-align: center;
+    color: black;
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+}
+
+.weather-forecast-temperature-max {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.weather-forecast-temperature-min {
+    font-size: 13px;
+    opacity: 0.7;
+}
