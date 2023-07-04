@@ -20,6 +20,32 @@ function formateDate(timeStamp) {
   let day = days[date.getDay()];
   return `${day}, ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (days) {
+    forecastHTML =
+      forecastHTML +
+      `
+     <div class="col-2">
+       <div class="weather-forecast-date">${days}</div>
+       <img
+         src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+         alt=""
+         w-30
+       />
+       <div class="weather-forecast-temperature">
+         <span class="weather-forecast-temperature-max">18°</span><span class="weather-forecast-temperature-min">12°</span>
+       </div>
+     </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -86,3 +112,4 @@ let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsiusTemperature);
 
 search("Pretoria");
+displayForecast();
