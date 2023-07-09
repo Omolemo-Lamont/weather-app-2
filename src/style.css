@@ -1,10 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1484199316358-d7acb93729f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1195&q=80');
+
 }
 
 
 h1 {
-    color: gray;
+    color: white;
     font-size: 28px;
     font-weight: 100;
     line-height: 28px;
@@ -20,7 +22,7 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: gray;
+    color: white;
     font-size: 16px;
     font-weight: 100px;
 
@@ -55,7 +57,7 @@ li ::first-letter {
 }
 
 .weather-temperature strong {
-    color: black;
+    color: white;
     font-weight: 400;
     font-size: 64px;
     line-height: 1;
@@ -69,7 +71,7 @@ li ::first-letter {
 }
 
 .weather-temperature .active {
-    color: black;
+    color: white;
     cursor: default;
 }
 
@@ -80,7 +82,7 @@ li ::first-letter {
 .weather-forcast {
     margin: 20px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .weather-forecast-date {
